@@ -1,2 +1,15 @@
 #!/bin/bash
+#Create a script that displays the 10 newest files in the current directory.
+
+#Requirements:
+
+#One file per line
+#Sorted from the newest to the oldest
+
 ls -t | head -n 10
+
+#Este script usa el lscomando para enumerar todos los archivos en el directorio actual, ordenados por hora de modificación ( -tmarca, del más nuevo al más antiguo). Luego canaliza la salida al headcomando, que imprime las primeras 10 líneas (es decir, los 10 archivos más nuevos) en la consola.
+
+#De forma predeterminada, lsgenera un archivo por línea, por lo que la salida tendrá el formato que solicitó (un archivo por línea).
+
+#Tenga en cuenta que esta secuencia de comandos asume que desea ordenar los archivos según su hora de modificación, que puede no ser la misma que su hora de creación, según el sistema operativo y el sistema de archivos. Si desea ordenar los archivos según un criterio diferente, puede modificar el lscomando en consecuencia.
