@@ -1,0 +1,15 @@
+#!/bin/bash
+'Write a script that duplicates the last line of the file iacta
+
+The file iacta will be in the working directory'
+
+tail -n 1 iacta >> iacta
+
+'Esto es lo que hace cada parte del comando:
+
+find: este comando se utiliza para buscar archivos y directorios que coincidan con criterios específicos.
+.: Esto especifica el directorio para iniciar la búsqueda (en este caso, el directorio actual).
+-type f: Esto especifica que solo se deben devolver archivos normales (no directorios).
+-name "*.js": Esto especifica que solo .jsse deben devolver los archivos con una extensión.
+-delete: esta opción elimina cualquier archivo que coincida con los criterios.
+Asegúrese de ejecutar este comando con precaución, ya que eliminará de forma permanente cualquier archivo que coincida con los criterios. Es una buena idea probar el comando primero en un pequeño directorio de prueba para asegurarse de que funciona como se espera.

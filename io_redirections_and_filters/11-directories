@@ -1,2 +1,14 @@
 #!/bin/bash
+
+#Write a script that counts the number of directories and sub-directories in the current directory.
+
+#The current and parent directories should not be taken into account
+#Hidden directories should be counted'
+
 find . -mindepth 1 -type d | wc -l
+
+#'Podemos ejecutar el comando de búsqueda con la opción -min depth 1  para excluir el directorio actual de la salida :'
+
+#Ahora, supongamos que solo queremos contar la cantidad de directorios directamente dentro de nuestro directorio de muestra sin considerar ningún subdirectorio anidado: una búsqueda no recursiva . ¿ Cómo podemos lograr esto con el comando de búsqueda ?
+
+#En realidad, es bastante simple de lograr: https://www.baeldung.com/linux/count-directories#:~:text=Using%20the%20ls%20Command,files%20contained%20in%20a%20directory.&text=The%20ls%20command%20with%20the,or%20pattern%20in%20the%20input.
