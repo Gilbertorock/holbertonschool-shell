@@ -1,2 +1,6 @@
 #!/bin/bash
+#Create a script that removes all letters c and C from input.
+
 tr -d 'cC'
+
+#La -dopción se utiliza para eliminar el conjunto de caracteres especificado.
