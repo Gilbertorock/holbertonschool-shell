@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$((TRUEKNOWLEDGE_value + 128))
+echo -e $((128 + TRUEKNOWLEDGE))
