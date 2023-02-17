@@ -1,2 +1,2 @@
 #!/bin/bash
-grep bin /etc/passwd -v
+cat -n | cat -t | grep [1,3,5,7,9]^I | cut -b 9-
